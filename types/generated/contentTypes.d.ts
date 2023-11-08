@@ -746,12 +746,14 @@ export interface ApiLogoLogo extends Schema.CollectionType {
     singularName: 'logo';
     pluralName: 'logos';
     displayName: 'logo';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     logo: Attribute.Media;
+    title: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
